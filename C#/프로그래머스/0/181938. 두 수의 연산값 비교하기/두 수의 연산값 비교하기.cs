@@ -3,8 +3,7 @@ using System;
 public class Solution {
     public int solution(int a, int b) 
     {
-        string mathA = a.ToString() + b.ToString();
-        int total = int.Parse(mathA);
+        int total = int.Parse($"{a}{b}");
         
         if (total < (2 * a * b))
         {
