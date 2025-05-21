@@ -4,18 +4,17 @@ public class Solution
 {
     public int solution(int a, int b) 
     {
-        string mathA = a.ToString() + b.ToString();
-        string mathB = b.ToString() + a.ToString();
-
-        if (mathA.CompareTo(mathB )>0)
+        int answer = 0;
+        int mathA = int.Parse($"{a}{b}");
+        int mathB = int.Parse($"{b}{a}");
+        if (mathA.CompareTo(mathB) > 0)
         {
-            int answer = int.Parse(mathA);
-            return answer;
+            answer = mathA;
         }
         else
         {
-            int answer = int.Parse(mathB);
-            return answer;
+            answer = mathB;
         }
+        return answer;
     }
 }
